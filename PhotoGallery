@@ -1,0 +1,112 @@
+PHOTOGALLERY-CODE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Gallery</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.gallery-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 15px;
+padding: 20px;
+margin: 0;
+}
+.gallery-item {
+position: relative;
+overflow: hidden;
+border: 4px solid #ddd;
+border-radius: 20px;
+transition: transform 0.4s, box-shadow 0.4s;
+}
+.gallery-item img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+}
+.gallery-item:hover {
+transform: scale(1.05);
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+</style>
+</head>
+<body>
+<h1 style="text-align: center; margin: 20px 0;">Photo Gallery</h1>
+<div class="gallery-container">
+<div class="gallery-item">
+<img
+src="https://th.bing.com/th/id/OIP.fBiPAiTUWiRWBj0hu62CrgAAAA?w=474&h=711&rs=1&pid=ImgDetMain"
+alt="Image 1">
+</div>
+<div class="gallery-item">
+<img src="https://i.pinimg.com/736x/95/01/28/9501283a356d349337e00b55dca39b92.jpg" alt="Image 2">
+</div>
+<div class="gallery-item">
+<img src="https://media.istockphoto.com/photos/love-swans-pictureid140259703?k=6&m=140259703&s=612x612&w=0&h=3U9uRGvRx_1frTpru24ERQUYnkwgHXP7BMrE8Czzhw0="
+alt="Image 3">
+</div>
+<div class="gallery-item">
+<img src="https://c.pxhere.com/photos/56/18/lion_wild_animal_animal_majesty_wild_zoo_fauna_tawny830854.jpg!d" alt="Image 4">
+</div>
+<div class="gallery-item">
+<img src="https://wallpapershome.com/images/pages/pic_v/19776.jpg" alt="Image 5">
+</div>
+<div class="gallery-item">
+<img
+src="https://th.bing.com/th/id/R.23bcd8905c5440b4817a580885c4ec3f?rik=Gk4pOrgGmSx2Qg&riu=http%3a%2f
+%2fwallup.net%2fwp-content%2fuploads%2f2016%2f01%2f214916-animals-wildlife-naturejaguars.jpg&ehk=%2bd4KdX1OytOgqC5Xsvld79IQgtVDYVBu8W8EJwBXPwU%3d&risl=&pid=ImgRaw&r=0"alt="Ima
+ge 6">
+</div>
+<div class="gallery-item">
+<img
+src="https://th.bing.com/th/id/OIP.5Djaq7bIQq_wZdXUs2nz7wHaE5?rs=1&pid=ImgDetMain"alt="Image 7">
+</div>
+<div class="gallery-item">
+<img src="https://www.pixelstalk.net/wp-content/uploads/2016/03/Cool-Wild-Animal-Wallpaper-ForDesktop.jpg" alt="Image 8">
+</div>
+<div class="gallery-item">
+<img
+src="https://th.bing.com/th/id/R.6bafcbbbddb4b7e4ae577d82e2a89734?rik=r8tUjVJm%2fih4rg&riu=http%3a%2f
+%2fr.ddmcdn.com%2fs_f%2fo_1%2fAPL%2fuploads%2f2014%2f08%2fbald-eagle-little-debbie2600w.jpg&ehk=wvLcSapfLoMh8xIkzQ%2bg3wI2YjoDAZoaufC0ZtIEK0w%3d&risl=&pid=ImgRaw&r=0" alt="Image
+9">
+</div>
+<div class="gallery-item">
+<img src="https://a-z-animals.com/media/2021/05/Wild-Dog-Breeds_-Arctic-Fox-1024x535.jpg" alt="Image
+10">
+</div>
+<div class="gallery-item">
+<img
+src="https://th.bing.com/th/id/R.baae0a160cbbe680cd93694ffc666406?rik=CFobapYebBzEJQ&riu=http%3a%2f%2
+ffeedinspiration.com%2fwp-content%2fuploads%2f2015%2f04%2fWild-AnimalsWallpapers.jpg&ehk=VBP48lJJBvXIy2SI7LFFDvNZikSM%2f0m9QDh3vdVh1LI%3d&risl=&pid=ImgRaw&r=0"
+alt="Image 11">
+</div>
+<div class="gallery-item">
+<img src="https://th.bing.com/th/id/OIP.wmTSse9XrXCasG_PkwrKNgHaEK?rs=1&pid=ImgDetMain"
+alt="Image 12">
+</div>
+<div class="gallery-item">
+<img src="https://i.ytimg.com/vi/1CWZZZ0-3UU/maxresdefault.jpg" alt="Image 13">
+</div>
+<div class="gallery-item">
+<img
+src="https://th.bing.com/th/id/R.eb6bec21541f77bca7220dbed43f5704?rik=22QmaGNuxKsqlw&riu=http%3a%2f
+%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f6%2f64%2fWhite_peacock_scone_palace.JPG&ehk=TPc6g
+bg6ZlgwPjKbdC4KXbvYtZl0ndXQeBHU2XAwmWQ%3d&risl=1&pid=ImgRaw&r=0" alt="Image 14">
+</div>
+<div class="gallery-item">
+<img
+src="https://th.bing.com/th/id/R.0dc18c6f94658ed15ec858c6255f8a75?rik=crgg1PuqwdOUaA&riu=http%3a%2f%
+2fcdn0.wideopenpets.com%2fwpcontent%2fuploads%2f2017%2f03%2fAdobeStock_83729458.jpeg&ehk=5mrxuIsCyVzLWWjYAKfr3phfYAuYafwVcDu
+jmvHshVA%3d&risl=&pid=ImgRaw&r=0" alt="Image 15">
+</div>
+</div>
+</body>
+</html>
