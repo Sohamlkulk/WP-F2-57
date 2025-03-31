@@ -1,0 +1,95 @@
+Calculator Code;
+Html:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, iniƟal-scale=1.0">
+ <Ɵtle>Calculator</Ɵtle>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="calculator">
+ <input type="text" id="result" disabled>
+ <div class="buƩons">
+ <buƩon onclick="appendNumber('7')">7</buƩon>
+ <buƩon onclick="appendNumber('8')">8</buƩon>
+ <buƩon onclick="appendNumber('9')">9</buƩon>
+ <buƩon onclick="appendOperator('+')">+</buƩon>
+ <buƩon onclick="appendNumber('4')">4</buƩon>
+ <buƩon onclick="appendNumber('5')">5</buƩon>
+ <buƩon onclick="appendNumber('6')">6</buƩon>
+ <buƩon onclick="appendOperator('-')">-</buƩon>
+ <buƩon onclick="appendNumber('1')">1</buƩon>
+ <buƩon onclick="appendNumber('2')">2</buƩon>
+ <buƩon onclick="appendNumber('3')">3</buƩon>
+ <buƩon onclick="appendOperator('*')">*</buƩon>
+ <buƩon onclick="appendNumber('0')">0</buƩon>
+ <buƩon onclick="clearResult()">C</buƩon>
+ <buƩon onclick="calculateResult()">=</buƩon>
+ <buƩon onclick="appendOperator('/')">/</buƩon>
+ </div>
+ </div>
+
+ <script src="script.js"></script>
+</body>
+</html>
+CSS:
+/* style.css */
+body {
+ font-family: Arial, sans-serif;
+ display: flex;
+ jusƟfy-content: center;
+ align-items: center;
+ height: 100vh;
+ margin: 0;
+ background-color: #f4f4f4;
+}
+.calculator {
+ background-color: white;
+ border-radius: 10px;
+ padding: 20px;
+ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+input {
+ width: 100%;
+ height: 40px;
+ font-size: 24px;
+ text-align: right;
+ padding: 5px;
+ border: 2px solid #ccc;
+ margin-boƩom: 20px;
+ border-radius: 5px;
+}
+buƩon {
+ width: 60px;
+ height: 60px;
+ font-size: 20px;
+ margin: 5px;
+ border: none;
+ background-color: #f0f0f0;
+ border-radius: 5px;
+ cursor: pointer;
+ transiƟon: background-color 0.3s;
+}
+buƩon:hover {
+ background-color: #ddd;
+}
+buƩon:acƟve {
+ background-color: #ccc;
+}
+JavaScript:
+funcƟon appendToDisplay(value) {
+ document.getElementById('display').value += value;
+}
+funcƟon clearDisplay() {
+ document.getElementById('display').value = '';
+}
+funcƟon calculateResult() {
+ const display = document.getElementById('display');
+ try {
+ display.value = eval(display.value);
+ } catch (error) {
+ display.value = 'Error';
+ }
+} 
